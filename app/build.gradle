@@ -29,6 +29,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    signingConfigs {
+        debug {
+            storePassword '123456'
+            keyAlias 'key1'
+            keyPassword '123456'
+        }
+        config
+    }
 }
 
 dependencies {
