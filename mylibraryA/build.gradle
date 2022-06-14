@@ -1,9 +1,7 @@
-plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
-//    id 'maven-publish'
-}
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'maven-publish'
+
 
 android {
     compileSdk 32
@@ -76,7 +74,7 @@ afterEvaluate {
 
                 groupId = 'com.github.MendiDev'
                 artifactId = 'menditest'
-                version = '1.0.6'
+                version = '1.0.7'
             }
         }
     }

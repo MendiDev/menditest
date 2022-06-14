@@ -1,7 +1,6 @@
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     compileSdk 32
@@ -30,15 +29,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    signingConfigs {
-        debug {
-            storePassword '123456'
-            keyAlias 'key1'
-            keyPassword '123456'
-        }
-        config
-    }
+//
+//    signingConfigs {
+//        debug {
+//            storePassword '123456'
+//            keyAlias 'key1'
+//            keyPassword '123456'
+//        }
+//        config
+//    }
 }
 
 dependencies {
