@@ -76,7 +76,7 @@ afterEvaluate {
 
                 groupId = 'com.github.MendiDev'
                 artifactId = 'menditest'
-                version = '1.0.4'
+                version = '1.0.5'
             }
         }
     }
