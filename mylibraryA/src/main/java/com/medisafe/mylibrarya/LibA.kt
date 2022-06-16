@@ -1,16 +1,16 @@
 package com.medisafe.mylibrarya
 
+import android.content.Context
 import android.util.Log
-import com.google.gson.Gson
-import com.medisafe.mylibraryb.LibB
+import com.skydoves.balloon.Balloon
 
 class LibA {
 
-    fun run(){
-        Log.i("mendi", "LibA")
-        val a  = Gson()
-        Log.i("mendi", "LibA gson:$a")
+    fun run(context: Context){
+        Log.i("mendi", "LibA - 15")
 
-        LibB().run()
+            val baloon = Balloon.Builder(context)
+        Log.i("mendi", "LibA: $baloon")
+
     }
 }
